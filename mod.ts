@@ -7,7 +7,7 @@ import type {
 } from "https://deno.land/x/lume@v1.19.4/core.ts";
 import { merge } from "https://deno.land/x/lume@v1.19.4/core/utils.ts";
 import loader from "https://deno.land/x/lume@v1.19.4/core/loaders/text.ts";
-import zenn from "npm:zenn-markdown-html@0.1.149";
+import zenn from "npm:zenn-markdown-html@0.1.150";
 
 const markdownToHtml = zenn.default;
 
