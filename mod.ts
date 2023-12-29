@@ -5,9 +5,11 @@ import type {
   Page,
   Site,
 } from "https://deno.land/x/lume@v1.19.4/core.ts";
+import { Exception } from "https://deno.land/x/lume@v1.19.4/core/errors.ts";
 import { merge } from "https://deno.land/x/lume@v1.19.4/core/utils.ts";
 import loader from "https://deno.land/x/lume@v1.19.4/core/loaders/text.ts";
 import zenn from "npm:zenn-markdown-html@0.1.150";
+import { replaceMath } from "./katex.ts";
 
 const markdownToHtml = zenn.default;
 
@@ -28,18 +30,22 @@ export class MarkdownEngine implements Engine {
 
   render(
     content: string,
-    _data?: Data,
-    _filename?: string,
+    data?: Data,
+    filename?: string,
   ): Promise<string> {
-    return Promise.resolve(markdownToHtml(content));
+    return Promise.resolve(this.renderSync(content, data, filename));
   }
 
   renderSync(
     content: string,
     _data?: Data,
-    _filename?: string,
+    filename?: string,
   ): string {
-    return markdownToHtml(content);
+    const r = replaceMath(markdownToHtml(content));
+    if (r.isErr()) {
+      throw new Exception(r.error.message, { cause: r.error, name: filename });
+    }
+    return r.value;
   }
 
   addHelper() {}
