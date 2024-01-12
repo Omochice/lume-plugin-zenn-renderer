@@ -4,10 +4,10 @@ import type {
   Helper,
   Page,
   Site,
-} from "https://deno.land/x/lume@v1.19.4/core.ts";
-import { Exception } from "https://deno.land/x/lume@v1.19.4/core/errors.ts";
-import { merge } from "https://deno.land/x/lume@v1.19.4/core/utils.ts";
-import loader from "https://deno.land/x/lume@v1.19.4/core/loaders/text.ts";
+} from "https://deno.land/x/lume@v2.0.3/core.ts";
+import { Exception } from "https://deno.land/x/lume@v2.0.3/core/errors.ts";
+import { merge } from "https://deno.land/x/lume@v2.0.3/core/utils.ts";
+import loader from "https://deno.land/x/lume@v2.0.3/core/loaders/text.ts";
 import zenn from "npm:zenn-markdown-html@0.1.150";
 import { replaceMath } from "./katex.ts";
 
