@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.2.0](https://github.com/Omochice/lume-plugin-zenn-renderer/compare/v0.0.1...v0.2.0) (2024-01-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* migrate lume v2 ([#9](https://github.com/Omochice/lume-plugin-zenn-renderer/issues/9))
+
+### Features
+
+* migrate lume v2 ([#9](https://github.com/Omochice/lume-plugin-zenn-renderer/issues/9)) ([a91663b](https://github.com/Omochice/lume-plugin-zenn-renderer/commit/a91663bec5f75b69b061db940f95d835cf13fb53))
+
 ## 0.0.1 (2023-12-29)
 
 
