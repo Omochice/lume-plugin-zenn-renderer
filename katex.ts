@@ -1,5 +1,5 @@
 import { katex } from "https://deno.land/x/lume@v2.0.3/deps/katex.ts";
-import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.43/deno-dom-wasm.ts";
+import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.45/deno-dom-wasm.ts";
 import { ensure, is } from "https://deno.land/x/unknownutil@v3.14.1/mod.ts";
 import { err, ok, Result } from "npm:neverthrow@6.1.0";
 
