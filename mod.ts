@@ -1,11 +1,11 @@
-import type { Data, Page } from "https://deno.land/x/lume@v2.0.3/core/file.ts";
-import type Site from "https://deno.land/x/lume@v2.0.3/core/site.ts";
+import type { Data, Page } from "https://deno.land/x/lume@v2.1.0/core/file.ts";
+import type Site from "https://deno.land/x/lume@v2.1.0/core/site.ts";
 import type {
   Engine,
   Helper,
-} from "https://deno.land/x/lume@v2.0.3/core/renderer.ts";
-import { merge } from "https://deno.land/x/lume@v2.0.3/core/utils/object.ts";
-import loader from "https://deno.land/x/lume@v2.0.3/core/loaders/text.ts";
+} from "https://deno.land/x/lume@v2.1.0/core/renderer.ts";
+import { merge } from "https://deno.land/x/lume@v2.1.0/core/utils/object.ts";
+import loader from "https://deno.land/x/lume@v2.1.0/core/loaders/text.ts";
 import zenn from "npm:zenn-markdown-html@0.1.150";
 import { replaceMath } from "./katex.ts";
 import { Exception } from "./error.ts";
