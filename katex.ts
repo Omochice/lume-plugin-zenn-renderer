@@ -1,6 +1,6 @@
 import { katex } from "https://deno.land/x/lume@v2.1.1/deps/katex.ts";
 import { DOMParser } from "https://deno.land/x/deno_dom@v0.1.45/deno-dom-wasm.ts";
-import { ensure, is } from "https://deno.land/x/unknownutil@v3.16.3/mod.ts";
+import { ensure, is } from "https://deno.land/x/unknownutil@v3.17.0/mod.ts";
 import { err, ok, Result } from "npm:neverthrow@6.1.0";
 
 const SELECTOR = "embed-katex";
