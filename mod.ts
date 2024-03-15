@@ -6,7 +6,7 @@ import type {
 } from "https://deno.land/x/lume@v2.1.2/core/renderer.ts";
 import { merge } from "https://deno.land/x/lume@v2.1.2/core/utils/object.ts";
 import loader from "https://deno.land/x/lume@v2.1.2/core/loaders/text.ts";
-import zenn from "npm:zenn-markdown-html@0.1.150";
+import zenn from "npm:zenn-markdown-html@0.1.153";
 import { replaceMath } from "./katex.ts";
 import { Exception } from "./error.ts";
 
